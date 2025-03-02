@@ -1,0 +1,10 @@
+footer {
+    background-color: #e0ffe2;
+    color: rgb(5, 0, 0); /* Цвет текста */
+    text-align: center; /* Выравнивание текста по центру */
+    padding: 20px; /* Отступы внутри footer */
+    display: flex;
+    align-items: flex-end; /* Прижимаем текст к низу footer */
+    justify-content: center; /* Выравниваем текст по центру горизонтально */
+    min-height: 100px; /* Минимальная высота footer */
+  }

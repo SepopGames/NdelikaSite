@@ -1,0 +1,13 @@
+
+
+ .navbar-brand {
+   margin-right: auto; /* Это обеспечит, что логотип останется слева */
+ }
+
+ .navbar-nav {
+   margin-left: auto; /* Это выровняет ссылки по правому краю */
+ }
+
+ .backgroundheaders{
+  background-color: #e0ffe2;
+}

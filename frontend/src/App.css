@@ -1,0 +1,46 @@
+h1 {
+  
+  font-family: 'AzeretMono', sans-serif;
+  src: url("./fonts/AzeretMono/AzeretMono-Italic-VariableFont_wght.ttf") format('truetype');
+ 
+  
+}
+
+.fixed-size-image {
+  width: 500px; /* Фиксированная ширина */
+  height: 200px; /* Автоматическая высота для сохранения пропорций */
+  
+}
+
+.background{
+  background-color: #ffffff;
+}
+
+.body {
+  
+  box-shadow: 'auto' rgba(1, 18, 24, 0.1);
+  display: 'flex';
+  justify-Content: 'center';
+  align-Items: 'center';
+  text-Align: 'Left';
+  font-weight: 0; /* Жирный шрифт */
+  
+}
+
+.text-small {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.text-medium {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.text-large {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555;
+}
