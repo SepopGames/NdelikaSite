@@ -23,17 +23,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-xme1sR!1$3))@RRgy)h-%t^=)uw2dq%1@j*&^c8$6@#^0c-(u!ip'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["www.ndelika.ru", "www.нделика.рф"]
 
 
 CORS_ORIGIN_ALLOW_ALL = False  # Отключаем разрешение для всех доменов
 CORS_ORIGIN_WHITELIST = [
     "https://ndelika.ru",  # Укажите домен вашего фронтенда
     "http://localhost:3000", 
+    "http://localhost:8000", 
     "https://нделика.рф", 
     "https://ndelika.com",
+    "http://127.0.0.1:8000",
        
 ]
 

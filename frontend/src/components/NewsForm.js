@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import Cookies from 'js-cookie'; // Ensure js-cookie is installed
 import { Container, Form, Button, Alert } from 'react-bootstrap';
 
 const NewsForm = () => {
@@ -9,7 +10,13 @@ const NewsForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:8000/api/news/', { title, content })
+        const csrfToken = Cookies.get('csrftoken');
+        axios.post('/api/news/', { title, content }, {
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': csrfToken, // Add CSRF token
+            },
+        })
             .then(response => {
                 console.log(response.data);
                 setSuccess(true);
@@ -17,7 +24,7 @@ const NewsForm = () => {
                 setContent('');
             })
             .catch(error => {
-                console.error(error);
+                console.error('Error submitting news:', error);
                 setSuccess(false);
             });
     };

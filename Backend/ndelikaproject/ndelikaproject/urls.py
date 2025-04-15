@@ -19,7 +19,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('ndelikaapp.urls')),
-    path('api/', include('ndelikaapp.urls'))
+    path('', include('ndelikaapp.urls')),  # Include app URLs at the root
 ]
 
